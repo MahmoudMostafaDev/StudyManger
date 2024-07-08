@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskManger</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header Section -->
+      <div class="header">
+        <h1>StudyManger</h1>
+
+        <ul class="nav">
+          <li id="active"><a href="index.html">Home</a></li>
+          <li><a href="TaskManger.html">Task Manger</a></li>
+          <li><a href="stats.html">Stats</a></li>
+        </ul>
+      </div>
+      <!-- Body Section -->
+      <div class="body">
+        <!-- Timer Section -->
+        <div class="timer">
+          <h2>Sessions : <span id="sessions">5</span></h2>
+          <h1>50:00</h1>
+          <div class="buttons">
+            <button id="stop">Stop</button>
+            <button id="start">Start</button>
+            <button id="break">Break</button>
+          </div>
+          <p>
+            Total Time: <span id="min">100</span> Min /
+            <span id="hour">1.6</span> Hour
+          </p>
+        </div>
+        <!-- Settings Section -->
+        <div class="settings">
+          <h2>Settings</h2>
+          <div class="choices">
+            <div class="choice">
+              <p>Session Time</p>
+              <input type="number" id="session-time" value="25" />
+            </div>
+            <div class="choice">
+              <p>Break Time</p>
+              <input type="number" id="break-time" value="5" />
+            </div>
+          </div>
+          <div class="taskChoose">
+            <label for="task">Choose Task</label>
+            <div
+              class="inputWrapper"
+              style="position: relative; display: inline-block"
+            >
+              <input
+                class="dropDown"
+                type="text"
+                name="task"
+                id="task"
+                autocomplete="off"
+                placeholder="Please select Task"
+              />
+              <ul class="diss"></ul>
+            </div>
+          </div>
+        </div>
+        <!-- Tasks Progress Section -->
+        <div class="tasksProgress">
+          <h2>Tasks Progress</h2>
+          <div class="tasks"></div>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="classes.js" type="module"></script> -->
+    <script src="index.js" type="module"></script>
+  </body>
+</html>

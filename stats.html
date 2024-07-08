@@ -1,0 +1,94 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskManger</title>
+    <link rel="stylesheet" href="stats.css" />
+    <script src="script.js" defer></script>
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header Section -->
+      <div class="header">
+        <h1>StudyManger</h1>
+
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="TaskManger.html">Task Manger</a></li>
+          <li id="active"><a href="stats.html">Stats</a></li>
+        </ul>
+      </div>
+      <!-- Body Section -->
+      <div class="dayStats">
+        <div class="stat">
+          <h1 id="today">20</h1>
+          <p>Today</p>
+        </div>
+        <div class="stat">
+          <h1 id="week">20</h1>
+          <p>This Week</p>
+        </div>
+        <div class="stat">
+          <h1 id="month">20</h1>
+          <p>This Month</p>
+        </div>
+        <div class="stat">
+          <h1 id="total">20</h1>
+          <p>Total</p>
+        </div>
+      </div>
+      <!-- Stats for tasks -->
+      <div class="taskStats">
+        <h2>Stats for tasks</h2>
+
+        <div class="taskContainer"></div>
+      </div>
+      <!-- Stats for special day -->
+      <div class="special">
+        <div class="content">
+          <h2>Stats for special day</h2>
+          <h3>Select a day</h3>
+        </div>
+
+        <div
+          class="inputWrapper"
+          style="position: relative; display: inline-block"
+        >
+          <input
+            class="dropDown specialDrop"
+            type="text"
+            name="task"
+            id="task"
+            autocomplete="off"
+            placeholder="Please select Day"
+          />
+          <ul class="diss"></ul>
+        </div>
+        <div class="taskContainer">
+          
+      </div>
+      <h2 id="bestTitle">The Best Task</h2>
+      <h2 id="bestTask">Java Script</h2>
+    </div>
+    <script src="classes.js" type="module"></script>
+    <script src="stats.js" type="module"></script>
+  </body>
+</html>

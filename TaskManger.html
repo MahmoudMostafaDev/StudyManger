@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>taskManage</title>
+    <link rel="stylesheet" href="Taskstyle.css" />
+    <script src="script.js" defer></script>
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header Section -->
+      <div class="header">
+        <h1>StudyManger</h1>
+
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li id="active"><a href="TaskManger.html">Task Manger</a></li>
+          <li><a href="stats.html">Stats</a></li>
+        </ul>
+      </div>
+      <!-- Body Section -->
+      <div class="body">
+        <div class="taskManage">
+          <h2>Task Manage</h2>
+          <div class="tasks"></div>
+        </div>
+
+        <!-- AddingTask Section -->
+        <div class="addingTask">
+          <form action="">
+            <label for="taskname">Enter Task</label>
+            <input
+              type="text"
+              id="taskname"
+              placeholder="Task Name"
+              autocomplete="off"
+            />
+            <label for="taskcount">Enter Count</label>
+            <input
+              type="number"
+              id="taskcount"
+              placeholder="Task Count"
+              autocomplete="off"
+            />
+            <button id="addTask">Add</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="classes.js" type="module"></script>
+    <script src="TaskManger.js" type="module"></script>
+  </body>
+</html>
